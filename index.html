@@ -76,15 +76,16 @@
     }
     .nav-logo-mark {
       width: 36px; height: 36px;
-      background: var(--green-deep);
+      background: var(--white);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
+      padding: 4px;
     }
-    .nav-logo-mark::after {
-      content: '🌾';
-      font-size: 16px;
-      position: absolute;
+    .nav-logo-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
     .nav-logo-text {
       font-family: 'Playfair Display', serif;
@@ -803,7 +804,9 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-mark"></div>
+    <div class="nav-logo-mark">
+      <img src="logo.jpg" alt="HarvestShield Logo">
+    </div>
     <span class="nav-logo-text">HARVESTSHIELD</span>
   </a>
   <button class="nav-menu-toggle" id="menuToggle">
@@ -1089,7 +1092,9 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
-        <div class="nav-logo-mark"></div>
+        <div class="nav-logo-mark">
+          <img src="logo.jpg" alt="HarvestShield Logo">
+        </div>
         <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--cream);">HARVESTSHIELD</span>
       </div>
       <p>Intelligence agricole souveraine pour les agriculteurs du Cameroun. On prédit la perte… pour qu'elle n'arrive jamais.</p>
